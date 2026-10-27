@@ -65,6 +65,18 @@ section{display:grid;gap:16px}
 .btn.line{border:2px solid var(--violet);color:var(--violet)}
 .btns{display:flex;flex-wrap:wrap;gap:10px}
 
+/* questions answered */
+.qa{display:grid;gap:8px}
+.qa h3{margin-top:8px}
+.qa details{border:2px solid var(--line);border-radius:14px;background:var(--soft)}
+.qa summary{cursor:pointer;font-weight:700;padding:14px 16px;min-height:56px;display:flex;align-items:center;gap:12px;list-style:none}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";margin-left:auto;font-size:1.5rem;line-height:1;color:var(--violet)}
+.qa details[open] summary::after{content:"\2212"}
+.qa details[open] summary{border-bottom:1px solid var(--line)}
+.qa details p{padding:10px 16px 0}
+.qa details p:last-child{padding-bottom:14px}
+
 /* golden rule */
 .golden{background:var(--night);color:#fff;border-radius:22px;padding:22px 24px;display:grid;gap:6px}
 .golden h2{color:#fff;font-size:clamp(1.8rem,7vw,2.6rem)}
@@ -141,6 +153,7 @@ footer .wrap{display:grid;gap:10px}
       <a class="btn wa" href="https://whatsapp.com/channel/0029VbDNvk93bbV9VkGnMf0K">Follow on WhatsApp</a>
       <a class="btn line" href="#h-wrong">Been scammed? What to do now</a>
       <a class="btn line" href="#workshop">Free workshops this week</a>
+      <a class="btn line" href="#questions">Your questions, answered</a>
     </div>
   </section>
 
@@ -234,9 +247,51 @@ footer .wrap{display:grid;gap:10px}
     </div>
   </section>
 
+  <section id="questions" aria-labelledby="h-questions">
+    <h2 id="h-questions">Your questions, answered</h2>
+    <p>Asked at the workshops. Short answers, the same as on the printed sheet and the WhatsApp channel. Tap a question to open it.</p>
+    <div class="qa">
+      <h3>Calls, messages and scams</h3>
+      <details><summary>I clicked a link. What now?</summary><p>Didn’t type anything in? Close it. That’s usually it.</p><p>Typed in a password or card? Block your card in your bank’s app, change that password, then message 017.</p></details>
+      <details><summary>Can AI really copy my voice?</summary><p>Yes. From a short video or a voice note.</p><p>That’s why your family code word matters. AI can’t guess it.</p></details>
+      <details><summary>Can scammers fake a notification?</summary><p>Not inside your real apps. But texts, websites and calendar invites can look like one.</p><p>Don’t tap it. Open the app yourself.</p></details>
+      <details><summary>Is it safe to scan QR codes?</summary><p>Usually. Check the web address it shows before you tap.</p><p>Watch out for stickers on parking meters and posters: fake codes get stuck over real ones.</p></details>
+      <details><summary>My friend’s WhatsApp was hacked. What do I do?</summary><p>Phone them. A real call, not a message.</p><p>Don’t tap anything “they” send, and never send money or codes.</p></details>
+      <details><summary>Someone rang from “Microsoft” about my computer.</summary><p>Hang up. Microsoft, Amazon and your internet company never ring out of the blue.</p><p>Never let anyone onto your computer because of a call.</p></details>
+      <details><summary>A delivery driver is ringing me. Do I answer?</summary><p>Expecting a parcel? Yes, answer it. A real driver only asks where to leave it.</p><p>Asked for money, a code or to tap a link? Hang up. AI can fake the voice. It can’t change what they’re after.</p></details>
+      <details><summary>The “bank” rang, and now someone’s coming to collect my card.</summary><p>Never hand it over. Banks never send anyone to collect cards.</p><p>Shut the door, ring the number on the back of your card, then ring the Guardia Civil on 062.</p></details>
+      <details><summary>An email says they hacked my camera, and it shows my old password.</summary><p>It’s a bluff. Don’t pay, don’t reply.</p><p>They got the old password from a leak. Change it anywhere you still use it.</p></details>
+    </div>
+    <div class="qa">
+      <h3>Your phone, bank and accounts</h3>
+      <details><summary>Is my bank account safe?</summary><p>Banks weren’t the weak lock this month. The bigger risk is being talked into a payment.</p><p>Turn on payment alerts in your banking app, and keep the golden rule.</p></details>
+      <details><summary>How do I know if I’ve been hacked?</summary><p>Messages you didn’t send. Unknown linked devices. Password emails you didn’t ask for.</p><p>Not sure? Message 017 on WhatsApp, 900 116 117. It’s free (in Spanish).</p></details>
+      <details><summary>Should I stop banking online?</summary><p>No. The bank’s own app, with two-step login, is a good way to bank.</p><p>Just never act on a call or a message. Open the app yourself.</p></details>
+      <details><summary>Should I buy antivirus or a data removal service?</summary><p>Not in a panic. Do the free things first.</p><p>Updates, the golden rule, two-step login. Most of the protection is free.</p></details>
+      <details><summary>Is the free Wi-Fi here safe?</summary><p>Fine for browsing and WhatsApp.</p><p>For banking, use mobile data or your home Wi-Fi.</p></details>
+      <details><summary>A robber makes me unlock my phone with my face. Isn’t that dangerous?</summary><p>Hand it over. You matter more than a phone.</p><p>Then switch on theft protection tonight: it stops a thief taking over your accounts. It’s on the take-home checklist.</p></details>
+      <details><summary>My phone suddenly says “No service” at home.</summary><p>Ring your phone company straight away, from another phone.</p><p>Someone may have copied your SIM to get your bank codes. Then ring your bank.</p></details>
+    </div>
+    <div class="qa">
+      <h3>WhatsApp, Facebook and listening devices</h3>
+      <details><summary>Is WhatsApp safe?</summary><p>Your chats are locked so only you and the other person can read them. WhatsApp says not even it or Meta can.</p><p>The real risks are scam messages and someone getting your 6-digit code. Turn on your WhatsApp PIN.</p></details>
+      <details><summary>If I follow your WhatsApp channel, can you see my number?</summary><p>No. Following doesn’t show your number to me or to anyone else.</p><p>If you’re already saved in my phone, WhatsApp tells me you follow. That’s all.</p></details>
+      <details><summary>Do I have to reply to the channel?</summary><p>You can’t. It’s one-way: I post, you read, when it suits you.</p><p>You can tap an emoji or answer a poll if you like. Nobody can message you from it.</p></details>
+      <details><summary>Is Facebook safe to use?</summary><p>Fine for keeping in touch, with a few settings.</p><p>Set your posts to Friends only. Skip quizzes, “you’ve won” posts and friend requests from people you’re already friends with.</p></details>
+      <details><summary>Can my TV or smart speaker hear me?</summary><p>They can. A big investigation in September says some LG TVs recorded sound even when they looked off. LG denies it.</p><p>Don’t use voice control? Turn it off in Settings, plus “viewing information”. Away for a while? Switch off at the wall.</p></details>
+      <details><summary>Is my phone listening to me?</summary><p>Not in the way people fear.</p><p>The real risks today are scam messages and shared codes.</p></details>
+    </div>
+    <div class="qa">
+      <h3>AI and the big questions</h3>
+      <details><summary>Will AI take our jobs?</summary><p>Some jobs will change, some will go, new ones will come. Nobody knows how fast.</p><p>Big topic. I’m planning a session on it. Follow the channel.</p></details>
+      <details><summary>Will AI kill us all?</summary><p>Nobody knows. Serious experts disagree.</p><p>Today we deal with what’s in front of us. A calm session on the big questions is coming.</p></details>
+      <details><summary>What do you get out of this?</summary><p>Today is free, and nothing is for sale.</p><p>The El Raso AI Hub is a free community site. My business, Costa Blanca AI, will run paid courses one day.</p></details>
+    </div>
+  </section>
+
   <section aria-labelledby="h-follow">
     <h2 id="h-follow">Get the updates</h2>
-    <p>Follow the El Raso AI Hub channel on WhatsApp. Only Richie can post. Nobody can see your number, and you can’t be added to anything. Usually one update a week, plus urgent warnings.</p>
+    <p>Follow the El Raso AI Hub channel on WhatsApp. Only Richie can post. Your number stays hidden from everyone (if you’re already saved in my phone, WhatsApp just tells me you follow). You can’t reply or be added to anything: you can only tap an emoji or answer a poll. Usually one update a week, plus urgent warnings.</p>
     <div class="btns"><a class="btn wa" href="https://whatsapp.com/channel/0029VbDNvk93bbV9VkGnMf0K">Follow on WhatsApp</a></div>
     <p class="stamp">Please don’t send me private details by message. For a chat, catch me at O’Brien’s.</p>
   </section>

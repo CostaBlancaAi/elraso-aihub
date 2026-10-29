@@ -243,6 +243,9 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
 .event .badge{background:var(--sun);color:#1B1340;font-weight:800;border-radius:999px;padding:2px 10px;font-size:.85rem}
 .event h3{font-size:1.4rem}
 .help a{word-break:break-word}
+
+.panel.before{border:3px solid var(--sun);background:rgba(242,169,59,.10)}
+.panel.before ol{margin:6px 0;padding-left:1.4em;display:grid;gap:6px}
 </style>
 </head>
 <body>
@@ -267,7 +270,7 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
     <h1 id="h-hello">It’s time to think differently.</h1>
     <p class="lead">AI is changing what’s real, fast. Nobody has all the answers. This hub keeps El Raso up to date, calmly and in plain English, so you don’t have to keep up on your own.</p>
     <a class="btn start" href="#start">👇 Start here</a>
-    <p class="stamp">Last checked by Richie: <time datetime="2026-10-28">Wednesday 28 October 2026</time></p>
+    <p class="stamp">Last checked by Richie: <time datetime="2026-10-29">Thursday 29 October 2026</time></p>
   </section>
 
   <nav class="tiles-wrap" id="start" aria-labelledby="h-start">
@@ -384,12 +387,16 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
             <li><b>Calm, not scary.</b> About one short update a week on WhatsApp. Your number stays hidden.</li>
           </ul>
           <div class="btns"><a class="btn wa" href="https://whatsapp.com/channel/0029VbDNvk93bbV9VkGnMf0K">Follow on WhatsApp</a></div>
-      <div class="panel"><h3>Telling a friend without a QR code?</h3><p>Ask them to type <b>costablancaai.com/elraso</b> in their browser’s address bar (not in Google), tap <b>go</b>, then tap the green <b>Follow on WhatsApp</b> button.</p><p>Most phone cameras read QR codes on their own. You don’t need a QR app.</p></div>
+      <div class="panel" id="noqr"><h3>No QR code? Two other ways in</h3>
+        <p><b>1. Type the address.</b> Type <b>costablancaai.com/elraso</b> in the bar at the top or bottom of your browser, <b>not</b> in Google’s search box (Google doesn’t list this page yet). Tap <b>go</b>, then the green <b>Follow on WhatsApp</b> button.</p>
+        <p><b>2. Ask a friend who follows the channel.</b> They open the channel, tap its name at the top, tap <b>Forward</b> (or <b>Share</b>) and send it to you on WhatsApp. You tap it and follow. <span class="src">(source: <a href="https://faq.whatsapp.com/305393838527652/">WhatsApp Help Center</a>)</span></p>
+      </div>
       <div class="panel" id="refs"><h3>Is that post really from Richie? Check the number</h3><p>Every post and poll I put on the channel ends with a reference number, like <b>CBAI-001</b>. If it’s really me, the same number is listed here. Not on this list? Don’t trust it, and tell me at O’Brien’s.</p><p>Type <b>costablancaai.com/elraso</b> in yourself. Never use a link from a message to check.</p>
         <ul class="reflist">
           <li><b>CBAI-001</b> Message: “Tell me what you want from El Raso AI Hub” (October 2026)</li>
           <li><b>CBAI-002</b> Poll: “What would help you most?” (October 2026)</li>
           <li><b>CBAI-003</b> Poll: “Which free workshops would you come to?” (October 2026)</li>
+          <li><b>CBAI-004</b> Message: “Coming to a workshop? 4 things to do the day before” (October 2026)</li>
         </ul>
         <p><b>About the polls:</b> just tick, as many answers as you like. Nobody sees who ticked what, not even me: channel polls hide your phone number <span class="src">(source: <a href="https://thequint.com/tech-and-auto/tech-news/whatsapp-to-roll-out-a-channel-polls-feature-soon-for-admins-check-details-here">WABetaInfo via The Quint</a>)</span>. No WhatsApp? Ask for the paper wish-list at the next session.</p>
       </div>
@@ -473,6 +480,11 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
       <div class="sec-body">
     <div class="updates">
       <article class="update">
+        <time datetime="2026-10-29">29 October 2026</time>
+        <h3>New: what to do before a workshop</h3>
+        <p>Update your phone and apps the day before, charge it, and know your passwords. <a href="#before">See the 4 things</a>. No QR code? <a href="#noqr">Two other ways in</a>.</p>
+      </article>
+      <article class="update">
         <time datetime="2026-10-28">28 October 2026</time>
         <h3>New: Facebook workshop, Thursday 11am</h3>
         <p>Tomorrow, Thursday 29 October, straight after Stay Calm, Stay Safe: <b>Is Facebook good for you?</b> About 30 minutes at O’Brien’s. Free. Bring your phone and go home with a short to-do list. <a href="#workshop">See all workshops</a>.</p>
@@ -523,6 +535,17 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
     <details class="sec">
       <summary><h2 id="h-workshop">Free workshops</h2></summary>
       <div class="sec-body">
+    <div class="panel before" id="before">
+      <h3>📱 Before you come: 4 things to do the day before</h3>
+      <ol>
+        <li><b>Update your phone.</b> iPhone: Settings › General › Software Update. Android: Settings › Software update (or System update).</li>
+        <li><b>Update your apps</b>, especially WhatsApp and Facebook. iPhone: App Store › your photo › Update All. Android: Play Store › your photo › Manage apps &amp; device › Update all.</li>
+        <li><b>Charge it</b> and bring the charger.</li>
+        <li><b>Know your passwords:</b> your phone’s passcode, and your Apple ID or Google password. Keep them on paper at home. Never tell them to anyone, me included.</li>
+      </ol>
+      <p>Stuck on any of these? Come anyway. We’ll help on the day.</p>
+      <p class="src">Very old Android phone? WhatsApp no longer works on Android 5 or older (since September 2026). You can still use this page in your browser and the paper sheets. <span>(source: <a href="https://wabetainfo.com/whatsapp-ends-support-for-older-android-versions-today/">WABetaInfo</a>)</span></p>
+    </div>
     <div class="event new">
       <div class="when"><span class="badge">New</span><b>Thursday 29 October, 11am</b><span>about 30 minutes</span></div>
       <div class="body">

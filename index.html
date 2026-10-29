@@ -246,6 +246,12 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
 
 .panel.before{border:3px solid var(--sun);background:rgba(242,169,59,.10)}
 .panel.before ol{margin:6px 0;padding-left:1.4em;display:grid;gap:6px}
+
+.tile.news{grid-column:1/-1;min-height:0;border-color:var(--violet);background:rgba(74,47,199,.08)}
+.newsitem{border:2px solid var(--line,#DDD8F0);border-radius:14px;padding:12px 14px;margin:12px 0;display:grid;gap:6px}
+.newsitem time{font-size:.9rem;font-weight:700;color:var(--muted)}
+.newsitem h3,.newsitem p{margin:0}
+.newsitem .means{background:var(--sun-tint,#FDF0DC);border-radius:10px;padding:8px 10px}
 </style>
 </head>
 <body>
@@ -278,12 +284,13 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
     <a class="todo-cta" href="#tonight" data-steps><span class="big">What to do now</span><span>Your to-do list, one easy step at a time. Tap here.</span></a>
     <h2 id="h-goto" class="goto">Or tap where you want to go</h2>
     <div class="tiles">
+      <a class="tile news" href="#ainews"><span class="ico" aria-hidden="true">🗞️</span><b>AI news in plain English</b><span>What’s happening, and what it means for you</span></a>
       <a class="tile" href="#think"><span class="ico" aria-hidden="true">🧭</span><b>Think differently</b><span>What’s real now</span></a>
       <a class="tile sun" href="#golden"><span class="ico" aria-hidden="true">✋</span><b>The golden rule</b><span>Not expecting it?</span></a>
       <a class="tile red" href="#wrong"><span class="ico" aria-hidden="true">🆘</span><b>Been scammed?</b><span>What to do now</span></a>
       <a class="tile" href="#workshop"><span class="ico" aria-hidden="true">📅</span><b>Free workshops</b><span>Dates and places</span></a>
       <a class="tile" href="#questions"><span class="ico" aria-hidden="true">❓</span><b>Your questions</b><span>Short answers</span></a>
-      <a class="tile" href="#updates"><span class="ico" aria-hidden="true">📰</span><b>What’s new</b><span>Latest news</span></a>
+      <a class="tile" href="#updates"><span class="ico" aria-hidden="true">📰</span><b>What’s new</b><span>On this hub</span></a>
       <a class="tile green" href="#save"><span class="ico" aria-hidden="true">📲</span><b>Save to your phone</b><span>Like an app</span></a>
     </div>
     <a class="btn wa wide" href="https://whatsapp.com/channel/0029VbDNvk93bbV9VkGnMf0K">Follow on WhatsApp</a>
@@ -325,6 +332,44 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
       <p><b>Saved it before and see a plain letter “E”?</b> Press and hold it, remove it, then add it again to get the proper ¿AI? icon.</p>
       <p><b>Stuck?</b> Ask your trusted helper, or bring your phone to a workshop and I’ll do it with you.</p>
     </div>
+  </section>
+
+  <section id="ainews" aria-labelledby="h-ainews">
+    <details class="sec" open>
+      <summary><h2 id="h-ainews">🗞️ AI news in plain English</h2></summary>
+      <div class="sec-body">
+    <p class="lead"><b>The short version:</b> a few things worth knowing, and what they mean for you. Newest first, updated every week. <span class="stamp">Last updated: Thursday 29 October 2026</span></p>
+    <article class="newsitem">
+      <time datetime="2026-10-28">28 October 2026 · USA, not here yet</time>
+      <h3>Chrome can fill in forms using your Gmail</h3>
+      <p>Google’s Chrome browser can now search your Gmail for things like booking numbers, addresses and card numbers, then suggest them on websites. You choose whether to turn it on. For now it’s only in the USA.</p>
+      <p class="means"><b>What it means for you:</b> handy, but it lets the browser read your email. If it arrives here, think before you switch it on, and never let anyone “set it up” for you over the phone.</p>
+      <p class="src">(source: <a href="https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/">TechCrunch, 28 Oct 2026</a>)</p>
+    </article>
+    <article class="newsitem">
+      <time datetime="2026-10-21">21 October 2026 · Spain</time>
+      <h3>A Spanish political party posted a deepfake video</h3>
+      <p>The PP put out a 51-second video that used AI to copy the faces and voices of six people linked to the PSOE, including the Prime Minister’s wife. They appear to “confess” to crimes. It said it was made with AI, but only in tiny, faint writing at the bottom. It reached almost two million views, and the PSOE has threatened legal action.</p>
+      <p class="means"><b>What it means for you:</b> fake videos of real people are now everyday news, even in elections. Look for an “AI” label, and don’t share a shocking video until you’ve checked it somewhere you trust.</p>
+      <p class="src">(source: <a href="https://www.theolivepress.es/spain-news/2026/10/22/pp-ai-pedro-sanchez-video-psoe/">The Olive Press, 22 Oct 2026</a>)</p>
+    </article>
+    <article class="newsitem">
+      <time datetime="2026-09-08">September 2026</time>
+      <h3>WhatsApp stopped working on very old Android phones</h3>
+      <p>WhatsApp no longer works on Android 5 or older. You now need Android 6 or newer.</p>
+      <p class="means"><b>What it means for you:</b> if WhatsApp stopped working on an old phone, that’s why. It isn’t a hack. You can still read this hub in your browser.</p>
+      <p class="src">(source: <a href="https://wabetainfo.com/whatsapp-ends-support-for-older-android-versions-today/">WABetaInfo</a>)</p>
+    </article>
+    <article class="newsitem">
+      <time datetime="2026-08-02">Since 2 August 2026 · EU</time>
+      <h3>New EU rules: AI must say it’s AI</h3>
+      <p>A chatbot must tell you it’s a machine, and deepfakes must be labelled. From 2 December 2026, apps that make fake nude pictures of real people without consent are banned.</p>
+      <p class="means"><b>What it means for you:</b> you have a right to know when you’re talking to a machine. But scammers don’t follow rules, so the golden rule still comes first.</p>
+      <p class="src">(source: <a href="https://www.actuia.com/en/news/ai-act-obligations-in-force-and-delays-under-omnibus-2026-1744/">ActuIA, on EU Regulation 2026/1744</a>)</p>
+    </article>
+    <p>Want the news on your phone? <a href="#follow">Follow the WhatsApp channel</a>. Information only, not advice.</p>
+      </div>
+    </details>
   </section>
 
   <section id="think" aria-labelledby="h-think">
@@ -693,6 +738,7 @@ section[id],nav[id],details[id]{scroll-margin-top:12px}
     <li><a href="#think">Think differently</a></li>
     <li><a href="#golden">The golden rule</a></li>
     <li><a href="#wrong">Been scammed? What to do</a></li>
+    <li><a href="#ainews">AI news</a></li>
     <li><a href="#updates">What’s new</a></li>
     <li><a href="#tonight"><b>What to do now (to-do list)</b></a></li>
     <li><a href="#workshop">Free workshops</a></li>
